@@ -56,7 +56,7 @@ bot.on('message', (msg) => {
 
   const session = userSessions.get(chatId)!;
 
-  if(text === restartCommand) {
+  if (text === restartCommand) {
     return onStartSession(chatId);
   }
 
@@ -174,7 +174,12 @@ function onQuizAnswer(session: any, messageText: string, chatId: number) {
     session.currentQuestion!++;
     if (session.currentQuestion! >= questions[lang].length) {
       session.stage = Stage.finished;
-      bot.sendMessage(chatId, translations[lang].congratulations);
+      bot.sendMessage(chatId, translations[lang].congratulations, {
+        reply_markup: {
+          inline_keyboard: [[{ text: translations[lang].restart, callback_data: CallbackType.commandRestart }]],
+          one_time_keyboard: true,
+        }
+      });
     } else {
       sendQuestion(chatId, session);
     }
@@ -186,12 +191,7 @@ function onQuizAnswer(session: any, messageText: string, chatId: number) {
 function onFinished(session: any, chatId: number) {
   const lang = session.lang as Language;
 
-  bot.sendMessage(chatId, translations[lang].finished, {
-    reply_markup: {
-      inline_keyboard: [[{ text: translations[lang].restart, callback_data: CallbackType.commandRestart }]],
-      one_time_keyboard: true,
-    }
-  });
+  bot.sendMessage(chatId, translations[lang].finished);
 }
 
 
