@@ -1,8 +1,10 @@
 import TelegramBot from 'node-telegram-bot-api';
+import dotenv from 'dotenv';
 import questionsJson from './questions.json';
 import translationsJson from './translations.json';
 
-const token = '7740136274:AAFLD5_h5nxIhmHdMNbo58xPbl3qMr7bigk';
+dotenv.config();
+const token = process.env.TELEGRAM_TOKEN!;
 const bot = new TelegramBot(token, { polling: true });
 const restartCommand = '/restart';
 
@@ -140,6 +142,7 @@ function onChooseLanguage(session: any, lang: Language, chatId: number) {
 function onStartClick(session: any, chatId: number) {
   session.stage = Stage.quiz;
   session.currentQuestion = 0;
+  session.currentHint = null;
   sendQuestion(chatId, session);
 }
 
@@ -172,6 +175,8 @@ function onQuizAnswer(session: any, messageText: string, chatId: number) {
 
   if (q.answers.includes(messageText.toLowerCase())) {
     session.currentQuestion!++;
+    session.currentHint = null;
+
     if (session.currentQuestion! >= questions[lang].length) {
       session.stage = Stage.finished;
       bot.sendMessage(chatId, translations[lang].congratulations, {
@@ -198,7 +203,6 @@ function onFinished(session: any, chatId: number) {
 function sendQuestion(chatId: number, session: Session) {
   const lang = session.lang as Language;
   const q = questions[lang][session.currentQuestion!];
-  session.currentHint = null;
 
   bot.sendMessage(chatId, q.question, {
     reply_markup: {

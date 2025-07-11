@@ -13,5 +13,18 @@
       ]
     }
   ],
-  "en": []
+  "en": [
+    {
+      "question": "question1",
+      "hints": [
+        "hint1",
+        "hint2",
+        "hint3",
+        "hint4"
+      ],
+      "answers": [
+        "stingray"
+      ]
+    }
+  ]
 }
