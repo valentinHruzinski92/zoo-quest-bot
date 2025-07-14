@@ -215,29 +215,30 @@ function onHintClick(session: any, chatId: number) {
   }
 }
 
-function onQuizAnswer(session: any, messageText: string, chatId: number) {
+async function onQuizAnswer(session: any, messageText: string, chatId: number) {
   const lang = session.lang as Language;
   const q = questions[lang][session.currentQuestion!];
 
   if (q.specialIncorrectAnswers.map((a) => a.toLowerCase()).includes(messageText.toLowerCase())) {
-    bot.sendMessage(chatId, translations[lang].rereadQuestionMessage);
+    return bot.sendMessage(chatId, translations[lang].rereadQuestionMessage);
   } else if (q.answers.map((a) => a.toLowerCase()).includes(messageText.toLowerCase())) {
     session.currentQuestion!++;
     session.currentHint = null;
 
     if (session.currentQuestion! >= questions[lang].length) {
       session.stage = Stage.finished;
-      bot.sendMessage(chatId, translations[lang].congratulations, {
+      return bot.sendMessage(chatId, translations[lang].congratulations, {
         reply_markup: {
           inline_keyboard: [[{ text: translations[lang].restart, callback_data: CallbackType.commandRestart }]],
           one_time_keyboard: true,
         }
       });
     } else {
-      sendQuestion(chatId, session);
+      await bot.sendMessage(chatId, translations[lang].correctAnswer);
+      return sendQuestion(chatId, session);
     }
   } else {
-    bot.sendMessage(chatId, translations[lang].incorrectAnswer);
+    return bot.sendMessage(chatId, translations[lang].incorrectAnswer);
   }
 }
 

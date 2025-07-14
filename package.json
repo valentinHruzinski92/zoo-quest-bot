@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && npm run copy-assets",
+    "build": "esbuild src/bot.ts --bundle --platform=node --outfile=dist/bundle.js && npm run copy-assets",
     "start": "npx ts-node src/bot.ts",
-    "copy-assets": "copyfiles -u 1 src/assets/**/* dist/assets"
+    "copy-assets": "copyfiles -u 1 src/assets/**/* dist"
   },
   "devDependencies": {
     "@types/node": "^24.0.12",
     "@types/node-telegram-bot-api": "^0.64.9",
     "copyfiles": "^2.4.1",
+    "esbuild": "^0.25.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },

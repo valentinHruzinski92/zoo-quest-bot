@@ -11,7 +11,8 @@
     "repeatQuestion": "Перечитать вопрос",
     "finished": "Квест уже завершён",
     "map": "Карта зоопарка",
-    "restart": "Перезапуск"
+    "restart": "Перезапуск",
+    "correctAnswer": "Ответ правильный. Переходим к следующему вопросу."
   },
   "en": {
     "toStart": "The main goal of this quest is to have a lot of fun and learn many new and interesting things. Throughout the game, you will be guessing animals based on unusual facts, riddles, and wordplay. Here are a few basic rules to help us have a great time.\n - The animals you need to find are located close to each other — you'll walk through most of the zoo, but there won’t be any long transitions between points.\n - If someone in your group figures it out right away, don’t rush to say the answer — give your friends a chance to think.\n - Hints are always available, and even if you already know the answer, we recommend using them — they also contain interesting details.\n - After you see a question, just type your answer as a message in the chat.\n - In the menu, you can find several useful commands such as \"Restart\", \"Repeat Question\", and \"Zoo Map\".\n - If you run into any difficulties, feel free to message me directly.\n\nThe game begins!\nPress \"Start\" to begin.",
@@ -25,6 +26,7 @@
     "repeatQuestion": "Reread Question",
     "finished": "The quest is already finished",
     "map": "Zoo map",
-    "restart": "Restart"
+    "restart": "Restart",
+    "correctAnswer": "Answer is correct. Moving on to the next question."
   }
 }
