@@ -78,7 +78,7 @@ bot.onText(new RegExp(`^/${Commands.answer}$`), async (msg) => {
   const lang = session.lang as Language;
   const q = questions[lang][session.currentQuestion!];
 
-  await bot.sendMessage(chatId, `${translations[lang].correctAnswerIs}${q.answers}`);
+  await bot.sendMessage(chatId, `${translations[lang].correctAnswerIs}"${q.answers.join('", "')}"`);
 
   session.currentQuestion!++;
   session.currentHint = null;
@@ -110,11 +110,11 @@ bot.on('message', (msg) => {
   }
 
   if (session.stage === Stage.quiz) {
-    return onQuizAnswer(session, text, chatId);
+    return onQuizAnswer(text, chatId);
   }
 
   if (session.stage === Stage.finished) {
-    return onFinished(session, chatId);
+    return onFinished(chatId);
   }
 });
 
@@ -127,16 +127,16 @@ bot.on('callback_query', (query) => {
 
   switch (data) {
     case `${CallbackType.chooseLanguage}_${Language.ru}`:
-      onChooseLanguage(session, Language.ru, chatId);
+      onChooseLanguage(Language.ru, chatId);
       break;
     case `${CallbackType.chooseLanguage}_${Language.en}`:
-      onChooseLanguage(session, Language.en, chatId);
+      onChooseLanguage(Language.en, chatId);
       break;
     case CallbackType.commandStart:
-      onStartClick(session, chatId);
+      onStartClick(chatId);
       break;
     case CallbackType.commandHint:
-      onHintClick(session, chatId);
+      onHintClick(chatId);
       break;
     case CallbackType.commandRestart:
       onStartSession(chatId);
@@ -146,7 +146,8 @@ bot.on('callback_query', (query) => {
   return bot.answerCallbackQuery(query.id);
 });
 
-function setBotCommands(session: any, chatId: number) {
+function setBotCommands(chatId: number) {
+  const session = userSessions.get(chatId)!;
   const lang = session.lang as Language || Language.en;
   const commands = [{ command: Commands.restart, description: translations[lang].restart }]
 
@@ -169,7 +170,7 @@ function setBotCommands(session: any, chatId: number) {
 function onStartSession(chatId: number) {
   userSessions.set(chatId, { stage: Stage.chooseLang });
   const session = userSessions.get(chatId as number)!;
-  setBotCommands(session, chatId);
+  setBotCommands(chatId);
   bot.sendMessage(chatId, chooseLanguageText, {
     reply_markup: {
       inline_keyboard: [[
@@ -186,10 +187,11 @@ function onStartSession(chatId: number) {
   });
 }
 
-function onChooseLanguage(session: any, lang: Language, chatId: number) {
+function onChooseLanguage(lang: Language, chatId: number) {
+  const session = userSessions.get(chatId)!;
   session.lang = lang;
   session.stage = Stage.start;
-  setBotCommands(session, chatId);
+  setBotCommands(chatId);
 
   bot.sendMessage(chatId, translations[lang].toStart, {
     reply_markup: {
@@ -199,18 +201,20 @@ function onChooseLanguage(session: any, lang: Language, chatId: number) {
   });
 }
 
-function onStartClick(session: any, chatId: number) {
+function onStartClick(chatId: number) {
+  const session = userSessions.get(chatId)!;
   session.stage = Stage.quiz;
   session.currentQuestion = 0;
   session.currentHint = null;
-  setBotCommands(session, chatId);
+  setBotCommands(chatId);
   sendQuestion(chatId);
 }
 
-function onHintClick(session: any, chatId: number) {
+function onHintClick(chatId: number) {
+  const session = userSessions.get(chatId)!;
   const lang = session.lang as Language;
   const q = questions[lang][session.currentQuestion!];
-  const nextHintIndex = session.currentHint === null ? 0 : session.currentHint + 1;
+  const nextHintIndex = !Number.isInteger(session.currentHint) ? 0 : session.currentHint! + 1;
   const nextHint = q.hints[nextHintIndex];
   const isLastHint = nextHintIndex >= q.hints.length - 1;
   session.currentHint = nextHintIndex;
@@ -230,7 +234,8 @@ function onHintClick(session: any, chatId: number) {
   }
 }
 
-async function onQuizAnswer(session: any, messageText: string, chatId: number) {
+async function onQuizAnswer(messageText: string, chatId: number) {
+  const session = userSessions.get(chatId)!;
   const lang = session.lang as Language;
   const q = questions[lang][session.currentQuestion!];
 
@@ -257,9 +262,10 @@ async function onQuizAnswer(session: any, messageText: string, chatId: number) {
   }
 }
 
-function onFinished(session: any, chatId: number) {
+function onFinished(chatId: number) {
+  const session = userSessions.get(chatId)!;
   const lang = session.lang as Language;
-  setBotCommands(session, chatId);
+  setBotCommands(chatId);
   bot.sendMessage(chatId, translations[lang].finished);
 }
 
