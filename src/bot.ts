@@ -1,12 +1,11 @@
 import TelegramBot from 'node-telegram-bot-api';
 import dotenv from 'dotenv';
+import path from 'path';
 import questionsJson from './questions.json';
 import translationsJson from './translations.json';
 
 dotenv.config();
 const token = process.env.TELEGRAM_TOKEN!;
-const bot = new TelegramBot(token, { polling: true });
-const restartCommand = '/restart';
 
 enum Language {
   ru = 'ru',
@@ -27,12 +26,19 @@ enum CallbackType {
   commandRestart = 'command_restart',
 }
 
+enum Commands {
+  restart = 'restart',
+  repeatQuestion = 'repeat_question',
+  map = 'map',
+}
+
 const chooseLanguageText = 'Выберите язык / Choose language';
 const chooseLanguageErrorText = 'Пожалуйста, выберите язык с клавиатуры ниже. / Please select a language from the keyboard below.';
 
 interface Question {
   question: string;
   answers: string[];
+  specialIncorrectAnswers: string[];
   hints: string[];
 }
 
@@ -47,6 +53,24 @@ const questions: Record<Language, Question[]> = questionsJson;
 const translations: Record<Language, { [key: string]: string }> = translationsJson;
 
 const userSessions = new Map<number, Session>();
+const bot = new TelegramBot(token, { polling: true });
+
+bot.onText(new RegExp(`^/${Commands.restart}$`), (msg) => {
+  const chatId = msg.chat.id;
+  return onStartSession(chatId);
+});
+
+bot.onText(new RegExp(`^/${Commands.repeatQuestion}$`), (msg) => {
+  const chatId = msg.chat.id;
+  const session = userSessions.get(chatId)!;
+
+  return sendQuestion(chatId, session);
+});
+
+bot.onText(new RegExp(`^/${Commands.map}$`), (msg) => {
+  const chatId = msg.chat.id;
+  return sendMap(chatId);
+});
 
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
@@ -56,11 +80,10 @@ bot.on('message', (msg) => {
     return onStartSession(chatId);
   }
 
-  const session = userSessions.get(chatId)!;
+  if (Object.values(Commands).map(v => `/${v}`).includes(text))
+    return;
 
-  if (text === restartCommand) {
-    return onStartSession(chatId);
-  }
+  const session = userSessions.get(chatId)!;
 
   if (session.stage === Stage.chooseLang) {
     return bot.sendMessage(chatId, chooseLanguageErrorText);
@@ -109,8 +132,29 @@ bot.on('callback_query', (query) => {
   return bot.answerCallbackQuery(query.id);
 });
 
+function setBotCommands(session: any, chatId: number) {
+  const lang = session.lang as Language || Language.en;
+  const commands = [{ command: Commands.restart, description: translations[lang].restart }]
+
+  if (session.stage === Stage.quiz) {
+    commands.push({ command: Commands.repeatQuestion, description: translations[lang].repeatQuestion });
+    commands.push({ command: Commands.map, description: translations[lang].map });
+  }
+
+  bot.setMyCommands(
+    commands,
+    {
+      scope: {
+        type: 'chat',
+        chat_id: chatId
+      }
+    });
+}
+
 function onStartSession(chatId: number) {
   userSessions.set(chatId, { stage: Stage.chooseLang });
+  const session = userSessions.get(chatId as number)!;
+  setBotCommands(session, chatId);
   bot.sendMessage(chatId, chooseLanguageText, {
     reply_markup: {
       inline_keyboard: [[
@@ -130,6 +174,7 @@ function onStartSession(chatId: number) {
 function onChooseLanguage(session: any, lang: Language, chatId: number) {
   session.lang = lang;
   session.stage = Stage.start;
+  setBotCommands(session, chatId);
 
   bot.sendMessage(chatId, translations[lang].toStart, {
     reply_markup: {
@@ -143,6 +188,7 @@ function onStartClick(session: any, chatId: number) {
   session.stage = Stage.quiz;
   session.currentQuestion = 0;
   session.currentHint = null;
+  setBotCommands(session, chatId);
   sendQuestion(chatId, session);
 }
 
@@ -173,7 +219,9 @@ function onQuizAnswer(session: any, messageText: string, chatId: number) {
   const lang = session.lang as Language;
   const q = questions[lang][session.currentQuestion!];
 
-  if (q.answers.includes(messageText.toLowerCase())) {
+  if (q.specialIncorrectAnswers.map((a) => a.toLowerCase()).includes(messageText.toLowerCase())) {
+    bot.sendMessage(chatId, translations[lang].rereadQuestionMessage);
+  } else if (q.answers.map((a) => a.toLowerCase()).includes(messageText.toLowerCase())) {
     session.currentQuestion!++;
     session.currentHint = null;
 
@@ -195,7 +243,7 @@ function onQuizAnswer(session: any, messageText: string, chatId: number) {
 
 function onFinished(session: any, chatId: number) {
   const lang = session.lang as Language;
-
+  setBotCommands(session, chatId);
   bot.sendMessage(chatId, translations[lang].finished);
 }
 
@@ -209,5 +257,15 @@ function sendQuestion(chatId: number, session: Session) {
       inline_keyboard: [[{ text: translations[lang].hint, callback_data: CallbackType.commandHint }]],
       one_time_keyboard: true,
     }
+  });
+}
+
+function sendMap(chatId: number) {
+  const filePath = path.join(__dirname, './assets/zoo-map.jpg');
+  const session = userSessions.get(chatId)!;
+  const lang = session.lang as Language;
+
+  bot.sendPhoto(chatId, filePath, {
+    caption: translations[lang].map
   });
 }

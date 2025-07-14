@@ -1,24 +1,30 @@
 {
   "ru": {
-    "toStart": "Главная цель этого квеста — получить массу удовольствия и узнать много нового и интересного. По ходу игры вам предстоит угадывать животных по необычным фактам, загадкам и каламбурам. Вот несколько основных правил, которые помогут нам хорошо провести время.\n - Животные, которых нужно найти, расположены на небольшом расстоянии друг от друга — вы обойдёте почти весь зоопарк, но больших переходов между точками не будет.\n - Если кто-то из вас сразу догадался — не спешите озвучивать ответ, дайте друзьям возможность подумать.\n - Подсказки всегда доступны, и даже если вы уже знаете ответ, рекомендую использовать их — в них тоже спрятаны любопытные детали.\n - После того как вы увидите вопрос — просто введите ответ сообщением в чат.\n - В любой момент вы можете ввести команду /restart, если что-то пошло не так или вы хотите начать заново.\n - Если возникнут трудности, смело пишите мне в личку.\n\nИгра начинается!\nНажмите \"Старт\", чтобы начать.",
+    "toStart": "Главная цель этого квеста — получить массу удовольствия и узнать много нового и интересного. По ходу игры вам предстоит угадывать животных по необычным фактам, загадкам и каламбурам. Вот несколько основных правил, которые помогут нам хорошо провести время.\n - Животные, которых нужно найти, расположены на небольшом расстоянии друг от друга — вы обойдёте почти весь зоопарк, но больших переходов между точками не будет.\n - Если кто-то из вас сразу догадался — не спешите озвучивать ответ, дайте друзьям возможность подумать.\n - Подсказки всегда доступны, и даже если вы уже знаете ответ, рекомендую использовать их — в них тоже спрятаны любопытные детали.\n - После того как вы увидите вопрос — просто введите ответ сообщением в чат.\n - В меню вы можете найти несколько полезных команд, такие как \"Перезапустить\", \"Повторить вопрос\" и \"Карта зоопарка\"\n - Если возникнут трудности, смело пишите мне в личку.\n\nИгра начинается!\nНажмите \"Старт\", чтобы начать.",
     "start": "Старт",
     "pressStart": "Нажмите \"Старт\", чтобы начать.",
     "hint": "Подсказка",
     "noMoreHints": "К сожалению, больше подсказок нет.",
     "incorrectAnswer": "Неправильный ответ. Попробуйте снова.",
     "congratulations": "Поздравляем! Квест завершён.",
+    "rereadQuestionMessage": "Думаю, стоит перечитать вопрос.",
+    "repeatQuestion": "Перечитать вопрос",
     "finished": "Квест уже завершён",
+    "map": "Карта зоопарка",
     "restart": "Перезапуск"
   },
   "en": {
-    "toStart": "The main goal of this quest is to have a lot of fun and learn many new and interesting things. Throughout the game, you will be guessing animals based on unusual facts, riddles, and wordplay. Here are a few basic rules to help us have a great time.\n - The animals you need to find are located close to each other — you'll walk through most of the zoo, but there won’t be any long transitions between points.\n - If someone in your group figures it out right away, don’t rush to say the answer — give your friends a chance to think.\n - Hints are always available, and even if you already know the answer, we recommend using them — they also contain interesting details.\n - After you see a question, just type your answer as a message in the chat.\n - At any time, you can enter the /restart command if something goes wrong or if you want to start over.\n - If you run into any difficulties, feel free to message me directly.\n\nThe game begins!\nPress \"Start\" to begin.",
+    "toStart": "The main goal of this quest is to have a lot of fun and learn many new and interesting things. Throughout the game, you will be guessing animals based on unusual facts, riddles, and wordplay. Here are a few basic rules to help us have a great time.\n - The animals you need to find are located close to each other — you'll walk through most of the zoo, but there won’t be any long transitions between points.\n - If someone in your group figures it out right away, don’t rush to say the answer — give your friends a chance to think.\n - Hints are always available, and even if you already know the answer, we recommend using them — they also contain interesting details.\n - After you see a question, just type your answer as a message in the chat.\n - In the menu, you can find several useful commands such as \"Restart\", \"Repeat Question\", and \"Zoo Map\".\n - If you run into any difficulties, feel free to message me directly.\n\nThe game begins!\nPress \"Start\" to begin.",
     "start": "Start",
     "pressStart": "Press \"Start\" to begin.",
     "hint": "Hint",
     "noMoreHints": "Unfortunately, there are no more hints available.",
     "incorrectAnswer": "Wrong answer. Try again.",
     "congratulations": "Congratulations! The quest is completed.",
+    "rereadQuestionMessage": "I think it’s worth rereading the question.",
+    "repeatQuestion": "Reread Question",
     "finished": "The quest is already finished",
+    "map": "Zoo map",
     "restart": "Restart"
   }
 }
