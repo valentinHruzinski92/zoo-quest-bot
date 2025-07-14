@@ -30,6 +30,7 @@ enum Commands {
   restart = 'restart',
   repeatQuestion = 'repeat_question',
   map = 'map',
+  answer = 'answer',
 }
 
 const chooseLanguageText = 'Выберите язык / Choose language';
@@ -62,15 +63,28 @@ bot.onText(new RegExp(`^/${Commands.restart}$`), (msg) => {
 
 bot.onText(new RegExp(`^/${Commands.repeatQuestion}$`), (msg) => {
   const chatId = msg.chat.id;
-  const session = userSessions.get(chatId)!;
 
-  return sendQuestion(chatId, session);
+  return sendQuestion(chatId);
 });
 
 bot.onText(new RegExp(`^/${Commands.map}$`), (msg) => {
   const chatId = msg.chat.id;
   return sendMap(chatId);
 });
+
+bot.onText(new RegExp(`^/${Commands.answer}$`), async (msg) => {
+  const chatId = msg.chat.id;
+  const session = userSessions.get(chatId)!;
+  const lang = session.lang as Language;
+  const q = questions[lang][session.currentQuestion!];
+
+  await bot.sendMessage(chatId, `${translations[lang].correctAnswerIs}${q.answers}`);
+
+  session.currentQuestion!++;
+  session.currentHint = null;
+  return sendQuestion(chatId);
+});
+
 
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
@@ -137,8 +151,9 @@ function setBotCommands(session: any, chatId: number) {
   const commands = [{ command: Commands.restart, description: translations[lang].restart }]
 
   if (session.stage === Stage.quiz) {
-    commands.push({ command: Commands.repeatQuestion, description: translations[lang].repeatQuestion });
-    commands.push({ command: Commands.map, description: translations[lang].map });
+    commands.unshift({ command: Commands.answer, description: translations[lang].correctAnswer });
+    commands.unshift({ command: Commands.repeatQuestion, description: translations[lang].repeatQuestion });
+    commands.unshift({ command: Commands.map, description: translations[lang].map });
   }
 
   bot.setMyCommands(
@@ -189,7 +204,7 @@ function onStartClick(session: any, chatId: number) {
   session.currentQuestion = 0;
   session.currentHint = null;
   setBotCommands(session, chatId);
-  sendQuestion(chatId, session);
+  sendQuestion(chatId);
 }
 
 function onHintClick(session: any, chatId: number) {
@@ -234,8 +249,8 @@ async function onQuizAnswer(session: any, messageText: string, chatId: number) {
         }
       });
     } else {
-      await bot.sendMessage(chatId, translations[lang].correctAnswer);
-      return sendQuestion(chatId, session);
+      await bot.sendMessage(chatId, translations[lang].correctAnswerMessage);
+      return sendQuestion(chatId);
     }
   } else {
     return bot.sendMessage(chatId, translations[lang].incorrectAnswer);
@@ -249,7 +264,8 @@ function onFinished(session: any, chatId: number) {
 }
 
 
-function sendQuestion(chatId: number, session: Session) {
+function sendQuestion(chatId: number) {
+  const session = userSessions.get(chatId)!;
   const lang = session.lang as Language;
   const q = questions[lang][session.currentQuestion!];
 
@@ -267,6 +283,6 @@ function sendMap(chatId: number) {
   const lang = session.lang as Language;
 
   bot.sendPhoto(chatId, filePath, {
-    caption: translations[lang].map
+    caption: translations[lang].mapNotes
   });
 }
