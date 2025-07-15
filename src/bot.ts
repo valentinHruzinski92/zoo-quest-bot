@@ -75,7 +75,7 @@ bot.onText(new RegExp(`^/${Commands.map}$`), (msg) => {
 bot.onText(new RegExp(`^/${Commands.answer}$`), async (msg) => {
   const chatId = msg.chat.id;
   const session = userSessions.get(chatId)!;
-  const lang = session.lang as Language;
+  const lang = session.lang as Language || Language.en;
   const q = questions[lang][session.currentQuestion!];
 
   await bot.sendMessage(chatId, `${translations[lang].correctAnswerIs}"${q.answers.join('", "')}"`);
@@ -103,7 +103,7 @@ bot.on('message', (msg) => {
     return bot.sendMessage(chatId, chooseLanguageErrorText);
   }
 
-  const lang = session.lang as Language;
+  const lang = session.lang as Language || Language.en;
 
   if (session.stage === Stage.start) {
     return bot.sendMessage(chatId, translations[lang].pressStart);
@@ -212,7 +212,7 @@ function onStartClick(chatId: number) {
 
 function onHintClick(chatId: number) {
   const session = userSessions.get(chatId)!;
-  const lang = session.lang as Language;
+  const lang = session.lang as Language || Language.en;
   const q = questions[lang][session.currentQuestion!];
   const nextHintIndex = !Number.isInteger(session.currentHint) ? 0 : session.currentHint! + 1;
   const nextHint = q.hints[nextHintIndex];
@@ -236,7 +236,7 @@ function onHintClick(chatId: number) {
 
 async function onQuizAnswer(messageText: string, chatId: number) {
   const session = userSessions.get(chatId)!;
-  const lang = session.lang as Language;
+  const lang = session.lang as Language || Language.en;
   const q = questions[lang][session.currentQuestion!];
 
   if (q.specialIncorrectAnswers.map((a) => a.toLowerCase()).includes(messageText.toLowerCase())) {
@@ -264,7 +264,7 @@ async function onQuizAnswer(messageText: string, chatId: number) {
 
 function onFinished(chatId: number) {
   const session = userSessions.get(chatId)!;
-  const lang = session.lang as Language;
+  const lang = session.lang as Language || Language.en;
   setBotCommands(chatId);
   bot.sendMessage(chatId, translations[lang].finished);
 }
@@ -272,7 +272,7 @@ function onFinished(chatId: number) {
 
 function sendQuestion(chatId: number) {
   const session = userSessions.get(chatId)!;
-  const lang = session.lang as Language;
+  const lang = session.lang as Language || Language.en;
   const q = questions[lang][session.currentQuestion!];
 
   bot.sendMessage(chatId, q.question, {
@@ -286,10 +286,10 @@ function sendQuestion(chatId: number) {
 async function sendMap(chatId: number) {
   const filePath = path.join(__dirname, './assets/zoo-map.jpg');
   const session = userSessions.get(chatId)!;
-  const lang = session.lang as Language;
+  const lang = session.lang as Language || Language.en;
   await bot.sendMessage(chatId, translations[lang].waitAMomentMapLoading);
 
-  bot.sendPhoto(chatId, filePath, {
+  bot.sendDocument(chatId, filePath, {
     caption: translations[lang].mapNotes
   });
 }
