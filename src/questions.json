@@ -105,10 +105,20 @@
         " - Если у вас трудности с поиском того, как слон добирался в Варшаву, то обратите внимание на клетку, которая стоит рядом с вольером"
       ],
       "answers": [
-        "переноска", "сумка", "сумка-переноска", "переноска-сумка", "клетка"
+        "переноска",
+        "сумка",
+        "сумка-переноска",
+        "переноска-сумка",
+        "клетка"
       ],
       "specialIncorrectAnswers": [
-        "слон", "слоны", "слона", "слонов", "слониха", "слонихи", "слоних"
+        "слон",
+        "слоны",
+        "слона",
+        "слонов",
+        "слониха",
+        "слонихи",
+        "слоних"
       ]
     },
     {
@@ -120,56 +130,398 @@
         " - Вам нужно найти имя гориллы самца, который остался жить в Варшавском зоопарке"
       ],
       "answers": [
-        "азизи", "азиз", "азизу", "азизов", "азиза", "горилла азизи", "гориллы азизи", "гориллу азизи", "горилл азизи"
+        "азизи",
+        "азиз",
+        "азизу",
+        "азизов",
+        "азиза",
+        "горилла азизи",
+        "гориллы азизи",
+        "гориллу азизи",
+        "горилл азизи"
       ],
       "specialIncorrectAnswers": [
-        "горилла","гориллы", "гориллу", "горилл"
+        "горилла",
+        "гориллы",
+        "гориллу",
+        "горилл"
+      ]
+    },
+    {
+      "question": "А сейчас проверим вашу скорость ума. Отвечайте как можно быстрее. Как только ответили, сразу жми кнопку “Подсказка”. Там будет продолжение вопроса.\nКрыльями машет чтобы летать\nКлювом владеет чтобы клевать \nНикаких не боится опасных высот \nОтвет однозначен - конечно же ..\n",
+      "hints": [
+        "Ну вот, попались! Конечно же, это птица. Предлагаю пройти в павильон с пернатыми и насладиться этими яркими и необычными созданиями. Чтобы продвинуться дальше, вам нужно ответить: сколько всего видов птиц обитает в большом зале, где растут растения и птицы свободно летают прямо над вами? Все виды перечислены на стендах у каждого входа. Можете нажать “Подсказка”, чтобы узнать интересные факты.",
+        " - Существует около 350 видов голубей, принадлежащих к семейству Голубиные (Columbidae). В этом семействе насчитывается 50 родов.\n - Колибри — единственные птицы, которые умеют летать назад.\n - У сов поворачивается голова почти на 270°.\n",
+        " - Глаза страуса больше мозга - \nНекоторые птицы едят очень много. Колибри, например, могут потреблять до двух раз больше пищи, чем весят сами. \n - Существуют некоторые виды птиц, которые вырабатывают яд. Например, у птиц родов Pitohui и Ifrita, обитающих в Новой Гвинее, кожа и перья содержат токсин, который может вызывать у человека раздражение и жжение при контакте. \n",
+        " - Некоторые птицы строят поистине огромные гнезда. Например, австралийская глазчатая курица (Leipoa ocellata) строит инкубационные холмы, которые могут достигать 4,57 метров в высоту и более 10 метров в ширину. \n - Сокол-сапсан, пикируя на добычу, развивает скорость свыше 300 километров в час. \n - По состоянию на начало 2017 года науке известно 10 672 вида ныне живущих птиц. Это делает их наиболее разнообразной группой животных.\n",
+        "Подсказка для ответа. В какой-то степени 2."
+      ],
+      "answers": [
+        "16",
+        "шестнадцать"
+      ],
+      "specialIncorrectAnswers": []
+    },
+    {
+      "question": "Однажды Омен проснулся в незнакомом месте. Мир вокруг изменился. Он привык к просторам и множеству других видов, а теперь видел лишь небольшой фрагмент привычного мира.  За его пределами — чужая, непонятная реальность. Он попытался двигаться, но врезался в невидимую преграду. Попробовал в другую сторону — та же история. Омен был растерян. Он не знал, ищет ли его апап.\nВаша задача — понять, где находится Омен. Отправляйтесь туда и найдите самых опасных. В ответе напишите три дня недели, указанные в их расписании. Пишите через пробел без других знаков препинания.",
+      "hints": [
+        "В вопросе есть 2 слова написаных задом наперед. Если вы найдете эти слова и прочитаете их правильно, вы сразу поймете куда идти. \n",
+        "Задом наперед были написаны слова Омен и апап. Если прочитать их правильно - получится Немо и папа. Отсылка к мультику в поисках Немо. Отправляйтесь в павильон с рыбами и следуйте инструкциям с вопроса выше. А пока вот вам несколько фактов про рыбу-клоун. \n - Рыбы-клоуны находятся в симбиотических отношениях с морскими анемонами, в которых они живут. Живущие в анемоне рыбки-немо, которых часто бывает несколько, помогают ему удалять отмершие щупальца, привлекать добычу и циркулировать воду. В обмен на это рыбки-клоуны получают от анемона пищу и убежище.\n - Существуют 30 видов рыб-клоунов\n - Они могут откладывать тысячи яиц за один раз\n - Все рыбы-клоуны рождаются самцами, но могут стать самками!\n - В стайках рыб-клоунов есть только одна доминирующая самка. Также есть только один доминирующий самец. Если доминирующая самка умирает, один из доминирующих самцов меняет пол и становится доминирующей самкой. Новый доминантный самец будет происходить от самого крупного самца в этой компании.\n",
+        "Самые опасные в павильоне - пираньи. Расписание висит рядом. Давайте узнаем про них что-нибудь интересное.\n - У пираньи очень острые зубы, расположенные в мощных челюстях, что позволяет им легко разрывать плоть и даже кости. \n - Хотя пираньи могут представлять опасность, особенно при нападении стаей, большинство нападений на людей преувеличены. Чаще всего они питаются рыбой, падалью и беспозвоночными. \n - Хотя пираньи считаются хищниками, они также питаются фруктами, семенами, насекомыми и другими беспозвоночными. \n - Существует около 60 видов пираний, которые отличаются по размеру, цвету и поведению. \n"
+      ],
+      "answers": [
+        "понедельник среда пятница"
+      ],
+      "specialIncorrectAnswers": [
+        "пиранья", "пирараньи", "рыба клоун", "рыбы клоун", "рыба-клоун", "рыбы-клоун"
+      ]
+    },
+    {
+      "question": "По дороге к следующему герою не забудьте взглянуть на Малую панду. Чаще всего это просто рыжий комок высоко на дереве, но иногда удача улыбается и можно увидеть как она кушает. \nНу а следующее существо передвигается, не касаясь пятками земли.  Его хвост — это и руль, и подножка, и баланс.  Оно не умеет идти назад — потому в некоторых странах считается символом движения вперёд.  Его младенцы рождаются размером меньше виноградинки и проходят путь до \"дома\" почти вслепую.  Найдите это животное и напишите, что у него вместо детской коляски?\n",
+      "hints": [
+        "Если вы еще не поняли что это за зверь, то вот небольшая подсказка. Это животное даже было изображено на монете великобритании.  А если вы подойдете слишком близко, будьте осторожны — оно может оттолкнуть вас сев на хвост и ударив ногами!\n",
+        "А вот факты:\n - За один прыжок он преодолевает около 2 метров. А спасаясь от преследования, может прыгнуть и на 9 метров.\n - Длинные дистанции бежит со скоростью до 20–25 км/ч, а на коротких может ускоряться до 70 км/ч.\n - Беременность длится 35 дней. Каждому из разновозрастных детей у матери предназначен отдельной сосок с разным по составу молоком.\n",
+        " - Мелкие виды живут на деревьях. Их называют валлаби.\n - В дикой природе живут около 6 лет, в неволе – более 20 лет.\n - Согласно легенде, название животного якобы появилось из-за непонимания между первооткрывателем Джеймсом Куком и аборигенами – он спросил у аборигена, что это за животное, а тот ответил на своем наречии «не понимаю». Эта фраза и трансформировалась в привычное слово. Правда, исследования показали, что эта легенда – не более чем забавная история, не имеющая фактической основы.\n"
+      ],
+      "answers": [
+        "сумка"
+      ],
+      "specialIncorrectAnswers": [
+        "кенгуру"
+      ]
+    },
+    {
+      "question": "Не забудьте заглянуть к совам. Мне они так нравятся. Некоторые из них внешне напоминают нас утром)\nА следующий герой не так прост как кажется. Многие думают что они имеют ТАКОЙ цвет с рождения, но это результат диеты, а не днк. Питается он вниз головой, фильтруя воду как чайник с ситечком. А зачем он стоит определенным образом часами — до сих пор никто не уверен. В ответ напишите цвет, с которым он чаще всего ассоциируется?\n",
+      "hints": [
+        "Что касается его стойки - он умеет стоять на одной ноге часами. А свой цвет он получает питаясь в основном ракообразными и водорослями. \n",
+        "По традиции немного интересного:\n - По одной из версий, они стоят на одной ноге чтобы сохранять тепло и экономить энергию. \n - В дикой природе могут жить до 30 лет, а в неволе – до 50 лет. \n - Живут в больших стаях и очень социальны, общаясь между собой с помощью разнообразных звуков. \n",
+        " - Является национальным символом Багамских островов. \n - Родители кормят птенцов \"птичьим молоком\", которое вырабатывается в пищеводе и богато пигментами. \n - Название происходит от латинского слова \"flamma\", что означает \"огонь\". \n"
+      ],
+      "answers": [
+        "розовый"
+      ],
+      "specialIncorrectAnswers": [
+        "фламинго"
+      ]
+    },
+    {
+      "question": "Эти ребята в смокингах выглядят так, будто направляются на приём к английской королеве. Многие думают, что они живут только среди снегов, но их часто можно встретить в Африке и Латинской Америке. Хотя они беззащитны и действительно обитают в снежных краях, не зафиксировано ни одного случая нападения на них со стороны белых медведей. А теперь вопрос: сможете ли вы назвать фамилию того из них, кто делал доклад по обстановке кругом в одном очень известном мультфильме? (Если не помните фамилию — подойдут и название мультфильма, и даже остров.)",
+      "hints": [
+        "В одном известном мультфильме группа этих агентов захватила корабль, на котором перевозили главных героев: льва, зебру, бегемота и жирафа. Из-за неосторожности вся четвёрка оказалась за бортом, а волны вынесли их на берег острова, название которого совпадает с названием мультфильма.\n",
+        " - Чаще всего эти животные моногамны и живут с одним партнёром всю жизнь. Однако уровень моногамии может варьироваться в зависимости от вида, и некоторые пары распадаются.\n - Они очень романтичны: самцы часто дарят самкам гальку в качестве подарка.\n - Самцы также участвуют в процессе высиживания яйца.\n",
+        " - Антарктиде живет их так много, что их колонии видны из космоса! Это помогает ученым изучать птиц, считать их, следить за передвижениями.\n - Это птица, которая не летает. Зато все 18 видов этого семейства отлично плавают и ныряют — благодаря обтекаемой форме тела и устройству костей крыльев.\n - Пингвины предпочитают ловить рыбу в верхних слоях воды, но при необходимости они способны погружаться на глубину до 150-200 метров.\n"
+      ],
+      "answers": [
+        "ковальски", "мадагаскар"
+      ],
+      "specialIncorrectAnswers": [
+        "пингвин", "пингвины", "пингвина", "пингвинов", "пингвинья", "пингвиньи", "пингвинь"
+      ]
+    },
+    {
+      "question": "А эта кошка быстрая как скорость поедания Cheetos. Эти стройняши - настоящая гроза антилоп и газелей. А отличить его от собратьев помогут черные полоски. А на дорожки для чего похожи это полосы ",
+      "hints": [
+        "Это самое быстрое животное на земле. Может разогнаться до 120 км/ч. Когда они бегут - 50% времени они находятся в воздухе.\n",
+        " - Они могут быть приручены и использованы для охоты, что практиковалось в древние времена и в средние века. \n - Общаются между собой с помощью различных звуков, включая мяуканье и писк. \n - Самцы часто живут в группах, называемых коалициями, что дает им преимущества в охоте и защите от других хищников. \n",
+        " - В отличие от других крупных кошачьих, когти этих животных не втягиваются, обеспечивая лучшее сцепление с землей во время бега.\n - После успешной охоты гепарды могут потратить много времени на отдых и восстановление сил. Они могут провести несколько дней, практически не двигаясь и отдыхая, прежде чем снова отправиться на охоту.\n - Гепарды находятся под угрозой вымирания из-за потери своего естественного среды обитания, охоты на них и конфликтов с человеком. Они внесены в Международную Красную книгу как уязвимый вид.\n"
+      ],
+      "answers": [
+        "слезы", "слеза", "для слез", "для слезы"
+      ],
+      "specialIncorrectAnswers": [
+        "гепард", "гепарды", "гепарда", "гепардов", "гепардья", "гепардьи", "гепардь"
+      ]
+    },
+    {
+      "question": "Давайте споем песенку:\nI like to move it, move it\nI like to move it, move it\nI like to move it, move it\nYou like to move it\nДумаю, этих подсказок достаточно, чтобы понять, о ком идёт речь. А в ответе укажите, куда ведёт небольшой тоннель из их дома(общее название части суши).",
+      "hints": [
+        "Это была отсылка к мультфильму Мадагаскар. А под эту песню устраивали тусовки небольшие существа. Попробуйте найти их.\n",
+        "Конечно же речь идет про лемуров. Давайте узнаем про них что-нибудь.\n - В природе существует более 60 видов лемуров. Этот вид приматов меньше всего похож на людей.\n - Самый маленький из существующих лемуров – мышиный, он весит не более 30 граммов, а длина его тела без хвоста не превышает 10 сантиметров.\n - Самый крупный вид лемуров – индри. Эти зверьки весят около 10 килограммов при длине тела до 90 сантиметров. Индри, в отличие от других видов лемуров, не могут жить в неволе, поэтому их разведение в искусственно созданной среде невозможно.\n",
+        " -  - Лемуры при необходимости могут впадать в длительную спячку, при этом температура их тела сравнивается с температурой окружающей среды. Больше почти никто из млекопитающих на это не способен.\n - Древние римляне называли лемурами души умерших, которые не могут найти покой и продолжают блуждать по Земле. В переводе с латинского слово Lemures означает «призрак ночи».\n - В семьях лемуров роль лидеров играют самки, а не самцы.\n",
+        " -  - Матери носят свое потомство во рту, пока малыши не научатся держаться за их шерсть самостоятельно. Взрослыми лемуры становятся в 2 года.\n - Лемуры умеют при помощи хвоста направлять запахи в нужную им сторону – это один из способов общения друг с другом.\n - Голубоглазые лемуры – единственные приматы, кроме человека, глаза у которых действительно имеют голубой цвет.\n"
+      ],
+      "answers": [
+        "остров", "на остров"
+      ],
+      "specialIncorrectAnswers": [
+        "лемур", "лемуры", "лемура", "лемуров", "лемурья", "лемурьи", "лемурь"
+      ]
+    },
+    {
+      "question": "Ну што, шаноўнае спадарства? \nЯк вам спадабалася? \nЯк самаадчуванне ад квэста? \nЦі зусім ні як?\nКаб знайсці наступную жывёліну, вам патрэбна навучыцца бачыць поміж  радкоў.\nА адказам на пытанне будзе высата над ўзрощнем мора, на якой гэта жывёліна жыве. Акругляйце да тысячы. Прыймаецца любы адказ с дыяпазона\n",
+      "hints": [
+        "Название животного в вопросе написано 3 раза. Несколько интересных фактов:\n - Эти животные одомашнены и используются человеком для перевозки грузов, в качестве тягловой силы, а также для получения молока, мяса и шерсти. \n - Может тащить в 2 раза больше собственного веса.\n - Разные народы называют его по разному. В Тибете называют \"дронгами\", а на Алтае - \"сарлыками\", что происходит от монгольского \"сарлаг\" - хрюкающий бык. \n",
+        " - Одомашненные животные могут хрюкать, в то время как дикие - не издают таких звуков. \n - В высокогорных районах, где мало древесины, их навоз является важным источником топлива. \n - Были одомашнены около 2500 лет назад, и их одомашнивание позволило людям заселить высокогорные районы. \n - В Тибете и других высокогорных регионах проводятся зрелищные гонки на яках, где наездники демонстрируют свою смелость. \n",
+        " - Обитают на высоте от 3000 до 5000 метров над уровнем моря\n"
+      ],
+      "answers": [
+        "3000", "4000", "5000", "3000 метров", "4000 метров", "5000 метров"
+      ],
+      "specialIncorrectAnswers": [
+        "як"
       ]
     }
   ],
   "en": [
     {
-        "question": "You must enter the zoo from the north side (if you see flamingos, you have chosen the wrong entrance). Below is an interesting fact about one animal. To get additional hints, press the 'Hint' button. To proceed to the next stage, you need to guess which animal it is and write down its FLAT NEIGHBOR in the answer.\n\n - Sweat is pink and acts as a natural sunscreen and antiseptic\n - Can open its mouth almost 150 degrees\n - So aggressive that it is considered one of the most dangerous creatures in its region\n - Its closest relatives, marine giants, diverged about 55 million years ago.",
-        "hints": [
-            " - Lives in water but cannot swim — moves by pushing off the bottom.\n - One of the popular myths states that they can influence the water level in one of the largest lakes on the planet\n - Skin thickness reaches 5 cm and is very difficult to injure even for predators",
-            " - Its tusks are not for eating but for fighting. They grow throughout life and can reach half a meter in length\n - An adult needs to surface every 3-5 minutes to maintain breathing. The process of surfacing and breathing is instinctive, so even while sleeping, it will surface to take in air without waking up\n - In South America, descendants of several individuals that escaped from Pablo Escobar's private zoo in the 1980s have settled — now they are rapidly multiplying and threatening the Amazon ecosystem.",
-            " - Flat neighbor is a fish from the neighboring aquarium."
-        ],
-        "answers": [
-            "ray", "skate", "skate-fish"
-        ],
-        "specialIncorrectAnswers": [
-            "hippopotamus", "hippo", "hippos"
-        ]
+      "question": "You must enter the zoo from the north side (if you see flamingos — you have chosen the wrong entrance). Below are interesting facts about one animal. To get additional hints, press the “Hint” button. To proceed to the next stage, you need to guess which animal it is and enter the name of its FLAT NEIGHBOR in the answer.\n\n - Its sweat is pink and acts as a natural sunscreen and antiseptic\n - It can open its mouth almost 150 degrees\n - It is so aggressive that it is considered one of the most dangerous creatures in its region\n - Its closest relatives are marine giants, having diverged about 55 million years ago.",
+      "hints": [
+        " - Lives in water but cannot swim — moves by pushing off the bottom.\n - One popular myth says they can influence the water level of one of the largest lakes on the planet\n - Its skin can be up to 5 cm thick and is very hard to injure, even for predators",
+        " - Its tusks are not for eating but for fighting. They grow throughout its life and can reach half a meter\n - An adult needs to surface every 3–5 minutes to breathe. Surfacing and breathing are instinctive, so even while sleeping, it will surface to breathe without waking up\n - Descendants of several individuals that escaped from Pablo Escobar’s private zoo in South America in the 1980s have now rapidly multiplied and threaten the Amazon ecosystem.",
+        " - The flat neighbor is a fish from the neighboring aquarium."
+      ],
+      "answers": [
+        "ray",
+        "stingray fish",
+        "stingray",
+        "sting ray"
+      ],
+      "specialIncorrectAnswers": [
+        "hippopotamus",
+        "hippo",
+        "hippopotam",
+        "hippopotamus"
+      ]
     },
     {
-        "question": "The first question was a warm-up. Now it will be more difficult.\nIn English, the species of this animal differ by the first letter. These letters indicate the quantity. And what exactly the quantity is, you will have to find out (THIS will be the answer).\n",
-        "hints": [
-            " - The first letters of the species are B and D. You don't need to know how these species are called; the first letters are enough. Try to rotate them.\n",
-            " - The species are called Bactrian and Dromedary (be careful, if you translate these words in a translator, it will immediately give you the answer). But here are some interesting facts.\n  - When overheated, it can raise its body temperature to avoid sweating and losing moisture.\n  - Many think that inside THIS is liquid, but in fact, it is fat\n",
-            " - Can go without water for up to two weeks, losing up to 40% of body weight without threat to life.\n - Closes nostrils and has double eyelashes to protect against sand during storms.\n - Can drink up to 100 liters of water at once, restoring its water balance in just a few minutes.\n",
-            " - Some species have 2 humps, while others have 1. What exactly?"
-        ],
-        "answers": [
-            "hump", "humps", "humpback"
-        ],
-        "specialIncorrectAnswers": [
-            "Camel", "Camels", "Camel's"
-        ]
+      "question": "The first question was a warm-up. Now it will be harder.\nIn English, the species of this animal are distinguished by the first letter. These letters indicate the quantity. And the quantity of WHAT exactly you need to find out (THIS will be the answer).\n",
+      "hints": [
+        " - The first letters of the animal species are B and D. You don't necessarily need to know their names. The first letters are enough. Try to turn them around.\n",
+        " - Here are some interesting facts for you.\n  - When overheating, it can raise its body temperature to avoid sweating and losing moisture.\n  - Many think that inside THIS there is liquid, but actually there is fat.\n",
+        " - Can go without water for up to two weeks, losing up to 40% of its body weight without life threat.\n - Closes its nostrils and has double eyelashes to protect against sand during storms.\n - Can drink up to 100 liters of water at once, restoring water balance in just a few minutes.\n",
+        " - Some species of this animal have 2 of them, others have 1. And what exactly?"
+      ],
+      "answers": [
+        "hump",
+        "humps",
+        "a hump",
+        "humps"
+      ],
+      "specialIncorrectAnswers": [
+        "camels",
+        "camel"
+      ]
     },
     {
-        "question": "Now it's time to look at the rocks — our next hero is known for its masterful camouflage and is almost invisible in its harsh mountain world.\nBut in one famous animated film about martial arts, it didn't have to hide: its strength and fearsome appearance were enough to instill fear with just a glance.\nIn the answer, indicate the body part that you will definitely notice when (if) you see it (at least on a stand).\n",
-        "hints": [
-            " - Can jump up to 6 meters in length and 2.5-3 meters in height!\n - Almost never roars — a 'silent predator'.\n - The pattern of spots on the fur of each animal of this species is unique, like fingerprints in humans.\n",
-            " - Despite its power, it does not show aggression towards humans and tries to avoid contact\n - The first Western photograph of a wild individual was taken only in 1970 by a researcher who traveled with one of the authors of the famous book about them\n - In Central Asia, these CATS are often honored with a place in national symbols — they are depicted on coats of arms, seals, and even money\n",
-            " - Looking at this animal, you will notice that half of its body length is occupied by THIS"
-        ],
-        "answers": [
-            "tail"
-        ],
-        "specialIncorrectAnswers": [
-            "snow leopard", "leopard", "leopard snow", "leopard mountain"
-        ]
+      "question": "Now it's time to look closely at the rocks — our next hero is known for masterful camouflage and is almost invisible in its harsh mountain world.\nBut in one famous martial arts cartoon, it didn't have to hide: its strength and formidable appearance were enough to inspire fear with just a glance.\nIn the answer, indicate the part of the body you would definitely notice when (if) you see it (even on a display).\n",
+      "hints": [
+        " - Can leap up to 6 meters in length and 2.5-3 meters in height!\n - Almost doesn't roar — a \"silent predator\".\n - The spot pattern on the skin of each animal of this species is unique, like human fingerprints.\n",
+        " - Despite its power, it does not show aggression towards humans and tries to avoid contact.\n - The first Western photo of a wild individual was taken only in 1970 by a researcher who traveled with one of the authors of a famous book about them.\n - In Central Asia, these CATS are often honored in national symbols — depicted on coats of arms, seals, and even money.\n",
+        " - Looking at this animal, you will notice that HALF of its body length is taken up by THIS."
+      ],
+      "answers": [
+        "tail"
+      ],
+      "specialIncorrectAnswers": [
+        "irbis",
+        "snow leopard",
+        "leopard",
+        "snow leopard",
+        "mountain snow leopard",
+        "mountain leopard"
+      ]
+    },
+    {
+      "question": "Reminder: the main goal of our quest is to have fun! So don’t forget to pay attention to other zoo inhabitants who are not part of the quest. To not miss anything, I suggest turning left from the snow leopard cliffs, look at the baboons, lions, go around the lion enclosure and on the left side look at the bongos. After that, you can visit the bear, and then head to the invertebrates pavilion. Remember, the map is available to you. Now, let’s move on to the next question. \nHonestly, I have always been amazed — how do they even transport these animals from one zoo to another?\nIf you hadn’t heard about them since childhood, I’d sooner believe in unicorns — at least those are just horses with a horn. But how is this even possible?\nFigure out who we’re talking about and see who else lives in this building. The answer will be the NAME of the most famous cartoon character among them who lived with a friend. His favorite phrase, translated from Swahili, means 'no worries' or 'don’t worry', but you definitely heard it in the original language.\n",
+      "hints": [
+        " - Here are some of the least obvious facts that probably won’t help you much but will add some mystery:\n - Can lick its own ear\n - Has a black tongue\n - Sleeps in 20-minute intervals, totaling 4-5 hours a day\n - Can reach speeds up to 55 km/h",
+        " - According to classifications until 2016, there were 9 species of this animal. According to the new classification, there are only 4 species and several subspecies\n - Age can be determined by the darkness of its spots\n - Only lions dare to attack this animal\n - Lives up to 30 years\n",
+        " - Has ONLY 7 cervical vertebrae — just like humans\n - Males determine who is stronger by hitting their opponent’s neck with their heads. This is called necking.\n - Can grow up to 5.5 meters tall\n",
+        " - If you have trouble finding the second animal, in Swahili 'no worries' sounds like 'hakuna matata'"
+      ],
+      "answers": [
+        "timon"
+      ],
+      "specialIncorrectAnswers": [
+        "giraffe",
+        "giraffes",
+        "giraffa",
+        "giraffes",
+        "meerkat",
+        "meerkats",
+        "meerkat",
+        "meerkats",
+        "timon and pumbaa",
+        "timon and pumbas"
+      ]
+    },
+    {
+      "question": "On the way to the giraffes, you probably noticed the serval. If by any chance you missed it — be sure to go back and take a look. Walking around its enclosure on the left, you will see the pudu and the leopard (of course, in separate enclosures). After that, head to the anteater. But where to go next — you’ll have to solve the next puzzle.\nIf you are from a Russian-speaking country, you will immediately understand where to go once you recall the blue helicopter and the wizard who gives away 500 ice creams. For others — I recommend googling the phrase “friend of Cheburashka”. The answer will be the longest inhabitant of this pavilion.\n",
+      "hints": [
+        " - I think the answer here is obvious, so here are some interesting facts about the inhabitants of this pavilion\n - This pavilion holds various facts about crocodiles, but remember there are several species in the zoo and not all facts may apply to all of them. There are three families of crocodiles: Alligatoridae (alligators and caimans), Crocodylidae (true crocodiles), and Gavialidae (gharials). In total, 26 recognized species of crocodiles exist, including 16 true crocodiles, 8 alligator species, and 2 gharial species.\n - Crocodiles have lived on Earth for over 200 million years and can hold their breath for up to two hours.\n - Crocodiles can cry, but not out of sadness. \"Crocodile tears\" appear when they eat, helping to clear salt from their eyes.\n - Over their lifetime, a crocodile can grow more than 3,000 teeth! (their teeth are continuously replaced). In the wild, crocodiles can live up to 70–80 years, and in zoos — sometimes more than 100 years.\n",
+        " - Here are some facts about turtles\n - Turtles are among the oldest reptiles, existing on Earth for over 200 million years.\n - There are about 328 species of turtles worldwide.\n - Cases have been recorded of turtles living up to 188 years.\n - Leatherback turtles are the largest of all modern turtles, weighing up to half a ton.\n - A turtle’s shell can regenerate if damaged.\n - Depending on the species, turtles can be herbivores, carnivores, or omnivores.\n - Turtles were among the first living creatures to travel to space.\n",
+        " - And some facts about snakes and lizards\n - There are more than 3,600 species of snakes, found on every continent except Antarctica.\n - Snakes have a unique skull structure allowing them to swallow prey much larger than their own heads.\n - Snakes use their forked tongue to collect scents and transfer them to a special organ on the roof of their mouth to \"sense\" their environment.\n - Some species of lizards have a third eye on the top of their head, which helps them detect light intensity.\n - The largest living lizard today is the Komodo dragon, which can weigh up to 80 kilograms and grow longer than 3 meters.\n - There are only two venomous lizards on the planet — the Mexican beaded lizard, which scares residents of Mexico, and the Gila monster, which poses a potential threat to people in the southwestern USA.\n",
+        " - And if you still haven’t guessed who we’re talking about, it is a very large snake located at the opposite end of the pavilion from the entrance."
+      ],
+      "answers": [
+        "anaconda"
+      ],
+      "specialIncorrectAnswers": []
+    },
+    {
+      "question": "Next, head toward the one that's often “not noticed in the room”. But remember — you're in a zoo, not “a china shop”. This animal also has a “hand” that doubles as another organ. As you walk along the enclosure, you’ll see how this animal likely arrived here. Now think — what do we usually call the cat’s version of what you just saw?\n",
+      "hints": [
+        " - Here are some interesting facts about this animal.\n - It can recognize people by their voice and smell.\n - Their “feet” feel vibrations of the ground — they “hear” with their feet!\n - These animals have a matriarchal society, and the herd consists of females and their young.\n - They are capable of a wide range of emotions, including joy, sadness, anger, and even empathy towards other animals and humans.\n",
+        " - There are only 3 species of this animal: African savanna, African forest, and Asian.\n - They have the longest pregnancy among mammals, lasting from 18 to 22 months.\n - These animals are also endangered. Many organizations work to protect and conserve them.\n",
+        " - They are the largest land animals and can reach up to 4 meters in height and weigh up to 6 tons.\n - The “nose” consists of 40 thousand muscles, and only the septum on the trunk is cartilage tissue that separates the nostrils.\n - The veins on their ears create a unique pattern, individual to each, similar to human fingerprints.\n",
+        " - If you have trouble finding how the elephant arrived in Warsaw, pay attention to the cage standing next to the enclosure."
+      ],
+      "answers": [
+        "carrier",
+        "bag",
+        "carry-bag",
+        "bag-carrier",
+        "cage"
+      ],
+      "specialIncorrectAnswers": [
+        "elephant",
+        "elephants",
+        "elephant's",
+        "elephants'",
+        "elephant female",
+        "elephant females",
+        "elephants female"
+      ]
+    },
+    {
+      "question": "Our next friend — or even brother — shares 95% of our DNA, according to analysis. There's even a famous movie where the main character is a giant male. In your answer, write the name of the lucky one who recently welcomed two beauties.",
+      "hints": [
+        " - The movie in question is King Kong. As usual, here are some interesting facts\n - The height of an adult male can reach 2 meters, and shoulder width — about one meter\n - An adult is stronger than any human on Earth. On average, a male is 6–8 times stronger than a trained man.\n - These animals are found only in the wild in Africa. Hunting them is prohibited everywhere.\n",
+        " - During the first three years, the young are completely helpless and depend entirely on their mother, who protects them.\n - Even dangerous predators like leopards tend to avoid confrontations with adult males of this species, as the outcome is very unpredictable\n - These animals can make 22 different sounds to communicate with each other.\n",
+        " - An adult can eat up to 30 kg of plant-based food per day.\n - These animals can learn basic sign language and communicate with humans. A female who lived in an American zoo, Koko, knew and used about 1,000 signs.\n - Most of the moisture they need comes from juicy leaves, so they drink water quite rarely.\n",
+        " - You need to find the name of the male gorilla who stayed at the Warsaw Zoo"
+      ],
+      "answers": [
+        "azizi",
+        "aziz",
+        "azizu",
+        "azizov",
+        "aziza",
+        "gorilla azizi",
+        "gorillas azizi",
+        "gorilla azizi",
+        "gorillas azizi"
+      ],
+      "specialIncorrectAnswers": [
+        "gorilla",
+        "gorillas",
+        "gorilla",
+        "gorillas"
+      ]
+    },
+    {
+      "question": "Now let's test your mental speed. Answer as quickly as you can. As soon as you respond, immediately press the “Hint” button. There will be a continuation of the question.\n\nIt flaps its wings and takes to flight,\nIt scans the sky with keenest sight.\nAbove the trees and morning fog,\nThe answer’s clear… it’s ….",
+      "hints": [
+        "Gotcha! Of course, it's a bird. I suggest heading to the pavilion with the feathered ones and enjoying these bright and unusual creatures. To move on, you need to answer: how many bird species live in the large hall where plants grow and birds fly freely above your head? All the species are listed on the signs near each entrance. You can press “Hint” to learn some fun facts.",
+        " - There are around 350 species of pigeons, belonging to the family Columbidae. This family contains 50 genera.\n - Hummingbirds are the only birds that can fly backwards.\n - Owls can rotate their heads almost 270°.\n",
+        " - An ostrich’s eyes are bigger than its brain.\nSome birds eat a lot. For example, hummingbirds can consume up to twice their body weight in food.\n - Some birds produce toxins. Birds of the genera Pitohui and Ifrita, found in New Guinea, have skin and feathers containing a toxin that can cause irritation or burning sensation on contact with human skin.\n",
+        " - Some birds build truly gigantic nests. For example, the Australian malleefowl (Leipoa ocellata) builds incubation mounds that can reach 4.57 meters high and over 10 meters wide.\n - The peregrine falcon, when diving for prey, can reach speeds over 300 kilometers per hour.\n - As of early 2017, science had identified 10,672 extant bird species, making them the most diverse group of animals.\n",
+        "Hint for the answer: To some extent, 2."
+      ],
+      "answers": [
+        "16",
+        "sixteen"
+      ],
+      "specialIncorrectAnswers": []
+    },
+    {
+      "question": "One day, Omen woke up in a strange place. The world around him had changed. He used to know vast open spaces and many different species. Now he saw only a tiny fragment of that world. Beyond it — a completely different reality. He tried to move forward, but hit an invisible wall. He tried another direction — the same result. Omen felt lost. He wasn’t even sure if his rehtaf was still looking for him.\nYour task is to figure out where Omen is. Go there and find the most dangerous ones. Your answer should be three weekdays from their feeding schedule. Type them with a space in between.\n",
+      "hints": [
+        "There are two words written backwards in the question. If you find and read them correctly, you'll immediately know where to go. \n",
+        "The words written backwards were Omen and rehtaf. If you read them properly — you’ll get Nemo and papa. This is a reference to the movie *Finding Nemo*. Head to the fish pavilion and follow the instructions from the main question. Meanwhile, here are some facts about clownfish:\n - Clownfish live in symbiosis with sea anemones, where they make their home. Multiple clownfish can live in one anemone, helping it by cleaning dead tentacles, attracting prey, and circulating water. In return, the anemone provides them with food and shelter.\n - There are 30 species of clownfish.\n - They can lay thousands of eggs at once.\n - All clownfish are born male but can become female!\n - In a group of clownfish, there is only one dominant female and one dominant male. If the dominant female dies, the dominant male changes sex and becomes the new dominant female. A new dominant male is chosen from the largest remaining males.\n",
+        "The most dangerous ones in the pavilion are piranhas. Their schedule is posted nearby. Let's learn something interesting about them:\n - Piranhas have extremely sharp teeth in strong jaws, allowing them to tear through flesh and even bone.\n - Although piranhas can be dangerous, especially when attacking in groups, most attacks on humans are exaggerated. They mostly feed on fish, carrion, and invertebrates.\n - While considered predators, piranhas also eat fruit, seeds, insects, and other invertebrates.\n - There are around 60 species of piranhas, differing in size, color, and behavior.\n"
+      ],
+      "answers": [
+        "monday wednesday friday"
+      ],
+      "specialIncorrectAnswers": [
+        "piranha", "piranhas", "clownfish", "clown fish", "clown-fish", "clown-fishes"
+      ]
+    },
+    {
+      "question": "On the way to the next hero, don’t forget to take a look at the Red Panda. Most often it’s just a reddish ball high in the tree, but sometimes luck is on your side and you can see it eating. \nNow, the next creature moves without touching its heels to the ground. Its tail acts as a rudder, a footrest, and a balance pole. It can’t walk backward — that’s why in some countries it’s seen as a symbol of moving forward. Its babies are born smaller than a grape and make their way to the \"home\" almost blind. Find this animal and write what it uses instead of a baby stroller?\n",
+      "hints": [
+        "If you still haven’t figured out what this creature is, here’s a small hint: it was once depicted on a UK coin. And if you get too close — be careful, it might push you away by sitting on its tail and kicking with its legs!\n",
+        "Here are some facts:\n - With a single jump it covers about 2 meters. When fleeing, it can leap up to 9 meters.\n - It runs long distances at 20–25 km/h, and can reach up to 70 km/h in short bursts.\n - Pregnancy lasts 35 days. Each of the differently aged babies gets its own nipple with milk specially adapted in composition.\n",
+        " - Smaller species live in trees. They are called wallabies.\n - In the wild, they live about 6 years, and over 20 years in captivity.\n - According to legend, the animal’s name came from a misunderstanding between explorer James Cook and the Aboriginals — he asked what the animal was, and the reply in their dialect meant “I don’t understand.” That phrase supposedly transformed into the name we use today. However, research shows this story is just a funny myth with no real basis.\n"
+      ],
+      "answers": [
+        "pouch"
+      ],
+      "specialIncorrectAnswers": [
+        "kangaroo"
+      ]
+    },
+    {
+      "question": "Не забудьте заглянуть к совам. Мне они так нравятся. Некоторые из них внешне напоминают нас утром)\nА следующий герой не так прост как кажется. Многие думают что они имеют ТАКОЙ цвет с рождения, но это результат диеты, а не днк. Питается он вниз головой, фильтруя воду как чайник с ситечком. А зачем он стоит определенным образом часами — до сих пор никто не уверен. В ответ напишите цвет, с которым он чаще всего ассоциируется?\n",
+      "hints": [
+        "Что касается его стойки - он умеет стоять на одной ноге часами. А свой цвет он получает питаясь в основном ракообразными и водорослями. \n",
+        "По традиции немного интересного:\n - По одной из версий, они стоят на одной ноге чтобы сохранять тепло и экономить энергию. \n - В дикой природе могут жить до 30 лет, а в неволе – до 50 лет. \n - Живут в больших стаях и очень социальны, общаясь между собой с помощью разнообразных звуков. \n",
+        " - Является национальным символом Багамских островов. \n - Родители кормят птенцов \"птичьим молоком\", которое вырабатывается в пищеводе и богато пигментами. \n - Название происходит от латинского слова \"flamma\", что означает \"огонь\". \n"
+      ],
+      "answers": [
+        "розовый"
+      ],
+      "specialIncorrectAnswers": [
+        "фламинго"
+      ]
+    },
+    {
+      "question": "Don't forget to visit the owls. I really like them. Some of them look like us in the morning)\nAnd the next character is not as simple as it seems. Many people think they have THAT color from birth, but it's actually the result of diet, not DNA. It eats upside down, filtering water like a teapot with a strainer. And why it stands a certain way for hours is still a mystery. As your answer, write the color it's most commonly associated with?\n",
+      "hints": [
+        "As for its posture – it can stand on one leg for hours. It gets its color mainly from eating crustaceans and algae. \n",
+        "Some fun facts:\n - One theory says they stand on one leg to conserve heat and energy. \n - In the wild, they can live up to 30 years, and in captivity – up to 50 years. \n - They live in large flocks and are highly social, communicating with a variety of sounds. \n",
+        " - It is the national symbol of the Bahamas. \n - Parents feed chicks with \"crop milk\", produced in the esophagus and rich in pigments. \n - The name comes from the Latin word \"flamma\", which means \"fire\". \n"
+      ],
+      "answers": [
+        "pink"
+      ],
+      "specialIncorrectAnswers": [
+        "flamingo"
+      ]
+    },
+    {
+      "question": "And this cat is as fast as eating Cheetos. These slim beauties are real nightmares for antelopes and gazelles. You can tell it apart from its relatives by the black stripes. And what do these stripes look like on a track?",
+      "hints": [
+        "This is the fastest land animal. It can accelerate up to 120 km/h. When they run, they spend 50% of the time in the air.\n",
+        " - They can be tamed and used for hunting, which was practiced in ancient times and the Middle Ages. \n - They communicate with each other using various sounds, including meows and chirps. \n - Males often live in groups called coalitions, which gives them advantages in hunting and protection from other predators. \n",
+        " - Unlike other large cats, their claws do not retract, providing better traction on the ground during running.\n - After a successful hunt, cheetahs can spend a lot of time resting and recovering. They may remain almost motionless for several days before going hunting again.\n - Cheetahs are under threat of extinction due to loss of natural habitat, hunting, and conflict with humans. They are listed in the IUCN Red List as a vulnerable species.\n"
+      ],
+      "answers": [
+        "tears", "tear", "for tears", "for a tear"
+      ],
+      "specialIncorrectAnswers": [
+        "cheetah", "cheetahs", "cheetah's", "cheetahs'", "cheetah-like", "cheetahish", "cheetah-style"
+      ]
+    },
+    {
+      "question": "Let's sing a song:\nI like to move it, move it\nI like to move it, move it\nI like to move it, move it\nYou like to move it\nI think these hints are enough to understand who we're talking about. In your answer, specify where the small tunnel from their home leads to (a general name for a landmass).",
+      "hints": [
+        "This was a reference to the movie Madagascar. And to this song, small creatures were throwing parties. Try to find them.\n",
+        "Of course, we're talking about lemurs. Let's learn something about them.\n - There are more than 60 species of lemurs in the wild. This type of primate is the least similar to humans.\n - The smallest known lemur is the mouse lemur. It weighs no more than 30 grams, and its body length without the tail does not exceed 10 centimeters.\n - The largest lemur species is the indri. These animals weigh about 10 kilograms and reach up to 90 centimeters in body length. Unlike other lemurs, indri cannot survive in captivity, making breeding in artificial conditions impossible.\n",
+        " - Lemurs can enter long hibernation when needed, during which their body temperature matches the ambient temperature. Almost no other mammal can do this.\n - Ancient Romans called them the souls of the dead who couldn't find peace and continued to wander the Earth. In Latin, the word Lemures means \"ghost of the night.\"\n - In lemur families, the leaders are females, not males.\n",
+        " - Mothers carry their offspring in their mouths until the babies learn to cling to their fur. Lemurs become fully mature at 2 years old.\n - Lemurs can use their tails to direct scents where they want — it's one way they communicate with each other.\n - Blue-eyed lemurs are the only primates besides humans that actually have blue eyes.\n"
+      ],
+      "answers": [
+        "island", "to the island", "to island", "to a island"
+      ],
+      "specialIncorrectAnswers": [
+        "lemur", "lemurs", "lemure", "lemurs'", "lemurian", "lemurians", "lemurish"
+      ]
+    },
+    {
+      "question": "The next question is based on a wordplay in Belarusian. Since you chose English, this task might be unclear for you. Therefore, I offer an alternative question to help you find the animal: Which even-toed ungulate is a symbol of Tibet and the Himalayas?\nOnce you find this animal, you need to write down the altitude above sea level where it lives. Please round to the nearest thousand. Any answer within the range will be accepted.",
+      "hints": [
+        "The name of the animal appears 3 times in the question. A few interesting facts:\n - These animals are domesticated and used by humans for carrying loads, as draft animals, and for milk, meat, and wool production. \n - Can carry up to twice their own body weight.\n - Different peoples call it differently. In Tibet, they are called \"drong\" and in Altai — \"sarlyks\", which comes from the Mongolian \"sarlag\" — grunting bull. \n",
+        " - Domesticated animals can grunt, while wild ones do not make such sounds. \n - In high-altitude regions where wood is scarce, their dung is an important source of fuel. \n - They were domesticated about 2,500 years ago, and this made it possible for people to inhabit high-mountain areas. \n - In Tibet and other mountainous regions, spectacular yak races are held where riders demonstrate their bravery. \n",
+        " - They inhabit altitudes ranging from 3,000 to 5,000 meters above sea level\n"
+      ],
+      "answers": [
+        "3000", "4000", "5000", "3000 meters", "4000 meters", "5000 meters"
+      ],
+      "specialIncorrectAnswers": [
+        "yak"
+      ]
     }
   ]
 }
