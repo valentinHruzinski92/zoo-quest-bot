@@ -22,7 +22,7 @@
     {
       "question": "Первый вопрос был разминочный. Сейчас будет потруднее.\nВ английском языке виды этого животного различаются по первой букве. Эти буквы указывают на количество. А вот количество ЧЕГО именно, вам и предстоит узнать(ЭТО будет ответом).\n",
       "hints": [
-        " - Первые буквы видов животного B и D. Вам не обязательно знать как эти виды называются. Первых букв вам достаточно.\n",
+        " - Первые буквы видов животного B и D. Вам не обязательно знать как эти виды называются. Первых букв вам достаточно. Попробуйте их повернуть.\n",
         " - Виды называются Bactrian и Dromedary(внимание, если вы переведете эти слова в переводчике - он сразу выдаст вам ответ). Но вот вам несколько интересных фактов.\n  - При перегреве способен повышать температуру тела, чтобы не потеть и не терять влагу.\n  - Много думаю, что внутри ЭТОГО - жидкость, на самом деле там жир\n",
         " - Может обходиться без воды до двух недель, теряя до 40% массы тела без угрозы для жизни.\n - Закрывает ноздри и имеет двойные ресницы, чтобы защищаться от песка во время бурь.\n - Может пить до 100 литров воды за раз, восстанавливая водный баланс всего за несколько минут.\n",
         " - У некотрых видов этого животного их 2, а у некоторых 1. А чего именно?"
@@ -114,7 +114,7 @@
     {
       "question": "Наш следующий друг — или даже брат — похож на нас на 95%, если верить анализу ДНК. Есть даже известный фильм, где главным героем стал самец-переросток. А в ответе укажите имя счастливчика, к которому совсем недавно переехали две красавицы.",
       "hints": [
-        " - По традиции, вот вам несколько интересных фактов\n - Рост взрослого самца может достигать 2 метров, а ширина плеч — метра\nВ - зрослая особь сильнее любого человека на Земле. В среднем самец сильнее тренированного мужчины в 6-8 раз.\n - Эти животные в дикой природе встречаются только в Африке. Охота на них повсеместно запрещена.\n",
+        " - Фильм, про котрый идет речь - Кинг-Конг. По традиции, вот вам несколько интересных фактов\n - Рост взрослого самца может достигать 2 метров, а ширина плеч — метра\nВ - зрослая особь сильнее любого человека на Земле. В среднем самец сильнее тренированного мужчины в 6-8 раз.\n - Эти животные в дикой природе встречаются только в Африке. Охота на них повсеместно запрещена.\n",
         " - Первые три года жизни детёныши совершенно беззащитны, и полностью зависят от матери, которая их оберегает.\n - Даже опасные хищники вроде леопардов избегают встречаться с самцами этого вида, потому что исход такой схватки очень трудно предугадать\n - Эти животные умеют издавать 22 разных звука, которые помогают им общаться между собой.\n",
         " - За день взрослая особь поедает до 30 кг растительной пищи.\n - Эти животные могут освоить основы языка жестов и общаться с его помощью с людьми. Жившая в американском зоопарке особь Коко знала и использовала около 1000 жестов.\n - Большую часть необходимой им влаги эти животные получают из сочной листвы, а потому пьют воду довольно редко\n",
         " - Вам нужно найти имя гориллы самца, который остался жить в Варшавском зоопарке"
@@ -129,19 +129,47 @@
   ],
   "en": [
     {
-      "question": "question1",
-      "hints": [
-        "hint1",
-        "hint2",
-        "hint3",
-        "hint4"
-      ],
-      "answers": [
-        "stingray"
-      ],
-      "specialIncorrectAnswers": [
-        "бегемот"
-      ]
+        "question": "You must enter the zoo from the north side (if you see flamingos, you have chosen the wrong entrance). Below is an interesting fact about one animal. To get additional hints, press the 'Hint' button. To proceed to the next stage, you need to guess which animal it is and write down its FLAT NEIGHBOR in the answer.\n\n - Sweat is pink and acts as a natural sunscreen and antiseptic\n - Can open its mouth almost 150 degrees\n - So aggressive that it is considered one of the most dangerous creatures in its region\n - Its closest relatives, marine giants, diverged about 55 million years ago.",
+        "hints": [
+            " - Lives in water but cannot swim — moves by pushing off the bottom.\n - One of the popular myths states that they can influence the water level in one of the largest lakes on the planet\n - Skin thickness reaches 5 cm and is very difficult to injure even for predators",
+            " - Its tusks are not for eating but for fighting. They grow throughout life and can reach half a meter in length\n - An adult needs to surface every 3-5 minutes to maintain breathing. The process of surfacing and breathing is instinctive, so even while sleeping, it will surface to take in air without waking up\n - In South America, descendants of several individuals that escaped from Pablo Escobar's private zoo in the 1980s have settled — now they are rapidly multiplying and threatening the Amazon ecosystem.",
+            " - Flat neighbor is a fish from the neighboring aquarium."
+        ],
+        "answers": [
+            "ray", "skate", "skate-fish"
+        ],
+        "specialIncorrectAnswers": [
+            "hippopotamus", "hippo", "hippos"
+        ]
+    },
+    {
+        "question": "The first question was a warm-up. Now it will be more difficult.\nIn English, the species of this animal differ by the first letter. These letters indicate the quantity. And what exactly the quantity is, you will have to find out (THIS will be the answer).\n",
+        "hints": [
+            " - The first letters of the species are B and D. You don't need to know how these species are called; the first letters are enough. Try to rotate them.\n",
+            " - The species are called Bactrian and Dromedary (be careful, if you translate these words in a translator, it will immediately give you the answer). But here are some interesting facts.\n  - When overheated, it can raise its body temperature to avoid sweating and losing moisture.\n  - Many think that inside THIS is liquid, but in fact, it is fat\n",
+            " - Can go without water for up to two weeks, losing up to 40% of body weight without threat to life.\n - Closes nostrils and has double eyelashes to protect against sand during storms.\n - Can drink up to 100 liters of water at once, restoring its water balance in just a few minutes.\n",
+            " - Some species have 2 humps, while others have 1. What exactly?"
+        ],
+        "answers": [
+            "hump", "humps", "humpback"
+        ],
+        "specialIncorrectAnswers": [
+            "Camel", "Camels", "Camel's"
+        ]
+    },
+    {
+        "question": "Now it's time to look at the rocks — our next hero is known for its masterful camouflage and is almost invisible in its harsh mountain world.\nBut in one famous animated film about martial arts, it didn't have to hide: its strength and fearsome appearance were enough to instill fear with just a glance.\nIn the answer, indicate the body part that you will definitely notice when (if) you see it (at least on a stand).\n",
+        "hints": [
+            " - Can jump up to 6 meters in length and 2.5-3 meters in height!\n - Almost never roars — a 'silent predator'.\n - The pattern of spots on the fur of each animal of this species is unique, like fingerprints in humans.\n",
+            " - Despite its power, it does not show aggression towards humans and tries to avoid contact\n - The first Western photograph of a wild individual was taken only in 1970 by a researcher who traveled with one of the authors of the famous book about them\n - In Central Asia, these CATS are often honored with a place in national symbols — they are depicted on coats of arms, seals, and even money\n",
+            " - Looking at this animal, you will notice that half of its body length is occupied by THIS"
+        ],
+        "answers": [
+            "tail"
+        ],
+        "specialIncorrectAnswers": [
+            "snow leopard", "leopard", "leopard snow", "leopard mountain"
+        ]
     }
   ]
 }

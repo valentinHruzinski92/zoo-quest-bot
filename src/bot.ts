@@ -283,10 +283,11 @@ function sendQuestion(chatId: number) {
   });
 }
 
-function sendMap(chatId: number) {
+async function sendMap(chatId: number) {
   const filePath = path.join(__dirname, './assets/zoo-map.jpg');
   const session = userSessions.get(chatId)!;
   const lang = session.lang as Language;
+  await bot.sendMessage(chatId, translations[lang].waitAMomentMapLoading);
 
   bot.sendPhoto(chatId, filePath, {
     caption: translations[lang].mapNotes
